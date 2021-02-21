@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
@@ -15,13 +15,17 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a class="info" href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a class="main-header-logo"><img src="img/logo.svg" width="457" height="351" alt="Логотип сайта седона"></a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
-      </ul>
+      <div class="main-header-bar">
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a class="info" href="#">Информация</a></li>
+            <li><a class="photo" href="#">Фото и видео</a></li>
+            <li><a class="main-header-logo"><img src="img/logo.svg" width="457" height="351" alt="Логотип сайта седона"></a></li>
+            <li><a class="site-map" href="#">Карта штата</a></li>
+            <li><a class="site-catalog" href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main class="container">
@@ -41,8 +45,9 @@
             <h3>Настоящий городок</h3>
             <span>-№1-</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <img src="img/city.jpg" width="800" height="256" alt="Фото города">
           </div>
-          <img src="img/city.jpg" width="800" height="256" alt="Фото города">
+
           <ul class="pluses-list">
             <li class="pluses-item-house">
               <h4>Жилье</h4>
@@ -63,8 +68,8 @@
             <h3>Там есть мост дьявола</h3>
             <span>-№2-</span>
             <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+            <img src="img/bridge.jpg" width="800" height="256" alt="Фото гор">
           </div>
-          <img src="img/bridge.jpg" width="800" height="256" alt="Фото гор">
         </li>
         <div class="feature-item-background">
           <li class="feature-item">
@@ -120,7 +125,7 @@
       <p>Тел: <a class="footer-phone" href="tel:+74956660166">+7(495)666-01-66</a></p>
     </section>
     <section class="footer-social">
-      <h2>Связаться с нами</h2>
+      <h2 class="visually-hidden">Связаться с нами</h2>
       <ul>
         <li>
           <a class="social-button twitter" href="#">
@@ -140,7 +145,7 @@
       </ul>
     </section>
     <section class="footer-copyright">
-      <h2>Наш сайт</h2>
+      <h2 class="visually-hidden">Наш сайт</h2>
       <p>Website by
         <a class="html-academy href="https://htmlacademy.ru">html academy</a>
       </p>
