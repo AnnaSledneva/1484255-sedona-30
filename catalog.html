@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
@@ -12,20 +12,24 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
 
-  <body>
+<body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <ul class="site-navigation">
-      <li><a href="#">Информация</a></li>
-      <li><a href="#">Фото и видео</a></li>
-      <li><a href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Sedona"></a></li>
-      <li><a href="#">Карта штата</a></li>
-      <li><a>Гостиницы</a></li>
-      </ul>
+      <div class="main-header-bar">
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a class="info" href="#">Информация</a></li>
+            <li><a class="photo" href="#">Фото и видео</a></li>
+            <li><a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Sedona"></a></li>
+            <li><a class="site-map" href="#">Карта штата</a></li>
+            <li><a class="site-catalog">Гостиницы</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main class="container">
-    <h1>Поиск жилья "Sedona"</h1>
+    <h1 class="visually-hidden">Поиск жилья "Sedona"</h1>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр</h2>
       <form method="get" action="#">
@@ -75,13 +79,15 @@
     </section>
     <section class="hotels">
       <h2 class="visually-hidden">Список отелей</h2>
-      <p class="search-result">Найдено: 3</p>
-      <p class="selection">Сортировка:</p>
-      <ul class="selection">
-        <li class="selection-item">По цене</li>
-        <li class="selection-item">По типу</li>
-        <li class="selection-item">По рейтингу</li>
-      </ul>
+      <div class="search-result-selection">
+        <p class="search-result">Найдено: 3</p>
+        <p class="selection">Сортировка:</p>
+        <ul class="selection">
+          <li class="selection-item">По цене</li>
+          <li class="selection-item">По типу</li>
+          <li class="selection-item">По рейтингу</li>
+        </ul>
+      </div>
       <ul class="hotels-list">
         <li class="hotels-item">
           <h3>Amara resort & Spa</h3>
@@ -143,12 +149,12 @@
 
   <footer class="main-footer">
     <section class="footer-contacts">
-      <h2>Контактные данные</h2>
+      <h2 class="visually-hidden">Контактные данные</h2>
       <p>#VISITSEDONA</p>
       <p>Тел: <a class="footer-phone" href="tel:+74956660166">+7(495)666-01-66</a></p>
     </section>
     <section class="footer-social">
-      <h2>Связаться с нами</h2>
+      <h2 class="visually-hidden">Связаться с нами</h2>
       <ul>
         <li>
           <a class="social-button twitter" href="#">
@@ -168,7 +174,7 @@
       </ul>
     </section>
     <section class="footer-copyright">
-      <h2>Наш сайт</h2>
+      <h2 class="visually-hidden">Наш сайт</h2>
       <p>Website by
       <a class="html-academy href="https://htmlacademy.ru">html academy</a>
       </p>

@@ -38,7 +38,6 @@ body {
   background-color: var(--basic-white);
   background-position: top center;
   background-repeat: no-repeat;
-
   min-height: 100%;
   display: grid;
   grid-template-rows:
@@ -399,6 +398,8 @@ img {
 /*  Filter */
 
 .filter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   color: var(--basic-white);
   background-image: url("../img/filter.jpg");
 }
@@ -419,6 +420,11 @@ img {
 .submit:hover {
   background-color: var(--basic-white);
   color: var(--text-black);
+}
+
+.search-result-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .search-result {
@@ -443,6 +449,11 @@ img {
 
 .selection-item:hover {
   color: var(--special);
+}
+
+.hotels-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .hotels-item h3 {
