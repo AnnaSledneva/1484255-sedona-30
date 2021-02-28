@@ -66,7 +66,9 @@ img {
 }
 
 .main-navigation {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   line-height: 26px;
   font-weight: 700;
 }
@@ -77,25 +79,25 @@ img {
   padding: 0 10px;
 }
 
-.main-header-bar {
-
+.main-navigation-wrapper {
+  width: 100%;
 }
 
-.main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
+.main-navigation-wrapper .wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-header-logo {
-  justify-self: center;
+  width: 138px;
+  height: 70px;
 }
 
 .site-navigation {
+  width: 1200px;
   margin: 0;
   padding: 0;
+  min-height: 56px;
   list-style: none;
 }
 
@@ -126,20 +128,14 @@ img {
 
 .photo {
   color: var(--text-black);
-  grid-column-start: 3;
-  grid-column-end: 4;
 }
 
 .site-map {
   color: var(--text-black);
-  grid-column-start: 6;
-  grid-column-end: 7;
 }
 
 .site-catalog {
   color: var(--text-black);
-  grid-column-start: 7;
-  grid-column-end: 8;
 }
 
 /* Intro */
@@ -157,21 +153,34 @@ img {
   margin: -1px;
 }
 
+.welcome {
+  display: flex;
+  justify-content: center;
+
+}
+
+.sedona-reasons {
+  background-color: var(--basic-white);
+  width: 1200px;
+  height: 216px;
+}
+
 .sedona {
+  padding-top: 43px;
+  padding-bottom: 17px;
+  text-align: center;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
 
 .reasons {
+  text-align: center;
   line-height: 26px;
+  margin-bottom: 51px;
 }
 
 /* Features */
-.features {
-
-}
-
 .features-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -184,6 +193,11 @@ img {
   text-align: center;
 }
 
+.advantages {
+  display: grid;
+  grid-column: 1 / -1;
+}
+
 .city {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -193,8 +207,10 @@ img {
 }
 
 .real-city {
+  width: 300px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  text-align: center;
 }
 
 .city-picture {
@@ -243,7 +259,7 @@ img {
 .pluses-list {
   display: grid;
   grid-template-columns: 1 fr 1 fr 1fr;
-  height: 256px;
+  height: 332px;
   list-style: none;
   color: var(--basic-dark);
 }
@@ -265,6 +281,10 @@ img {
   background-repeat: no-repeat;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 331px;
 }
 
 .pluses-item-burger {
@@ -445,6 +465,22 @@ img {
   background-image: url("../img/filter.jpg");
 }
 
+.filter fieldset {
+  margin-top: 27px;
+  margin-bottom: 25px;
+  padding: 0;
+  border: none;
+}
+
+.filter fieldset:first-child {
+  margin-right: 119px;
+  margin-left: 72px;
+}
+
+.filter fieldset:last-child {
+  margin-left: 348px;
+}
+
 .filter legend {
   font-weight: 700;
   font-size: 16px;
@@ -474,11 +510,16 @@ form {
   line-height: 26px;
 }
 
+.search-selection {
+  display: flex;
+  flex-direction: row;
+  height: 88px;
+}
+
 .selection {
   list-style: none;
   font-size: 12px;
   line-height: 18px;
-  background-color: var(--special);
   background-image: url("../img/cursor_up.svg");
   background-image: url("../img/cursor_down.svg");
   background-repeat: no-repeat;
@@ -494,7 +535,8 @@ form {
 
 .hotels-item {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 135px 170px auto;
+  grid-column-gap: 30px;
 }
 
 .hotels-item h3 {
@@ -521,6 +563,10 @@ form {
 
 .villas-star {
   justify-self: end;
+}
+
+.details-book {
+  display: flex;
 }
 
 .details {
