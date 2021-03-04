@@ -468,8 +468,7 @@ img {
   width: 150px;
   height: 43px;
   background-color: var(--special);
-  background-position: top;
-
+  background-position: center;
 }
 
 .social-button:hover {
@@ -505,7 +504,7 @@ img {
 
 /* Catalog */
 
-/*  Filter */
+/* Filter */
 
 .filter {
   color: var(--basic-white);
@@ -550,6 +549,8 @@ form {
   background-color: var(--basic-white);
   color: var(--text-black);
 }
+
+/* Hotels */
 
 .search-result {
   font-weight: bold;
@@ -603,7 +604,29 @@ form {
   opacity: 0.3;
 }
 
+.amara {
+  display: flex;
+  flex-direction: column;
+}
+
+.desert-inn {
+  display: flex;
+  flex-direction: column;
+}
+
+.villas {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.details-book {
+  display: flex;
+}
+
 .amara-star {
+  display: flex;
+  justify-content: flex-end;
   justify-self: end;
 }
 
@@ -613,10 +636,6 @@ form {
 
 .villas-star {
   justify-self: end;
-}
-
-.details-book {
-  display: flex;
 }
 
 .details {
